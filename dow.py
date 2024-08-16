@@ -11,7 +11,7 @@ nombre['file']  = ""
 app = Client("boti",
              api_id="29739508",
              api_hash="c2dbd1337dab67791f6635670328e8e4",
-             bot_token="7208754912:AAFfd7gY5HfOJTiW35vxskoaW4RgHJAzpsk")
+             bot_token="7208754912:AAHZWS7wnv8ppkC_NJaAlE-AO6EKNT33f9I")
 
 @app.on_message(filters.document)
 def descarga(client, message):
