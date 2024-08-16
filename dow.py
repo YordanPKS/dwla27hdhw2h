@@ -21,7 +21,7 @@ def download_file(client, message):
     url = message.text.split()[1]
     download_folder = 'downloads/'  # Replace with your desired download folder
     ydl_opts = {
-    'format_id': 'best[height=360]',
+    'format_id': 'best[height=720]',
     'outtmpl': f'{download_folder}/%(title)s.%(ext)s', # Guarda los videos en la carpeta "downloads"
     'cookiefile': 'cookies.txt'
     }
