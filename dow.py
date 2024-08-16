@@ -24,7 +24,8 @@ def download_file(client, message):
     'format_id': 'best[height<=720]',
     'outtmpl': f'{download_folder}/%(title)s.%(ext)s', # Guarda los videos en la carpeta "downloads"
     'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36',
-    'cookiefile': 'cookies.txt'
+    'username': 'yordanpks9@gmail.com',  # Reemplaza con tu correo electrónico
+    'password': 'maikol123'  # Reemplaza con tu contraseña
     }
     app.send_message(message.chat.id,"Espere mientras se descarga su video")
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
