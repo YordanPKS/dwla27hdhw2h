@@ -19,7 +19,7 @@ def descarga(client, message):
 @app.on_message(filters.command("descargar"))
 def download_file(client, message):
     url = message.text.split()[1]
-    download_folder = 'downloads/'  # Replace with your desired download folder
+    download_folder = 'downloads'  # Replace with your desired download folder
     ydl_opts = {
     'format': 'best[height<=720]',
     'outtmpl': f'{download_folder}/%(title)s.%(ext)s', # Guarda los videos en la carpeta "downloads"
