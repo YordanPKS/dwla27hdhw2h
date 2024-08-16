@@ -6,7 +6,7 @@ from linea import keep_alive
 keep_alive()
 nombre  = {}
 calidad = {}
-calidad['resolucion'] =  'best[height<=480]'
+calidad['resolucion'] =  ''
 nombre['file']  = ""
 app = Client("boti",
              api_id="29739508",
