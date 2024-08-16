@@ -9,7 +9,7 @@ nombre['file']  = ""
 app = Client("boti",
              api_id="29739508",
              api_hash="c2dbd1337dab67791f6635670328e8e4",
-             bot_token="7418826010:AAGI_5TR1bO_EW4tAcXiFC-RU1frIOca4As")
+             bot_token="7208754912:AAFfd7gY5HfOJTiW35vxskoaW4RgHJAzpsk")
 
 @app.on_message(filters.document)
 def descarga(client, message):
@@ -21,7 +21,7 @@ def download_file(client, message):
     url = message.text.split()[1]
     download_folder = '/downloads/'  # Replace with your desired download folder
     ydl_opts = {
-    'format': 'best[height<=720]',
+    'format_id': 'best[height<=720]',
     'outtmpl': f'{download_folder}/%(title)s.%(ext)s'  # Guarda los videos en la carpeta "downloads"
     }
     app.send_message(message.chat.id,"Espere mientras se descarga su video")
