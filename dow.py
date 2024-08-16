@@ -23,6 +23,10 @@ def download_file(client, message):
     ydl_opts = {
     'format': 'best[height<=480]',
     'outtmpl': f'{download_folder}/%(title)s.%(ext)s', # Guarda los videos en la carpeta "downloads"
+    'postprocessors': [{
+            'key': 'FFmpegVideoConvertor',
+            'preferedformat': 'mp4',
+        }],
     'cookiefile': 'cookies.txt'
     }
     app.send_message(message.chat.id,"Espere mientras su video es procesado\nEsto puede tardar varios segundos")
