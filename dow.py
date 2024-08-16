@@ -25,6 +25,7 @@ def download_file(client, message):
     'outtmpl': f'{download_folder}/%(title)s.%(ext)s', # Guarda los videos en la carpeta "downloads"
     'cookiefile': 'cookies.txt'
     }
+    app.send_message(message.chat.id,"Espere mientras su video es procesado\nEsto puede tardar varios segundos")
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         result = ydl.extract_info(url, download=True)
         nombre_video = ydl.prepare_filename(result)
