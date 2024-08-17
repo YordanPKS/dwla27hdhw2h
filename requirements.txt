@@ -2,3 +2,4 @@ pyrogram
 yt_dlp
 flask
 tgcrypto
+instaloader
