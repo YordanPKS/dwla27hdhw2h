@@ -24,7 +24,7 @@ def download_video_insta(client, message):
     
     # Aquí puedes cargar tu sesión de cookies
     try:
-        loader.load_session_from_file('yordan09prueba', sessionfile='seccion/seccion_nueva')  # Reemplaza "tu_usuario" con tu nombre de usuario
+        loader.load_session_from_file('yordan09prueba', filename='seccion/seccion_nueva')  # Reemplaza "tu_usuario" con tu nombre de usuario
     except FileNotFoundError:
         app.send_message(message.chat.id, "No se encontró la sesión. Asegúrate de haber iniciado sesión previamente.")
         return
