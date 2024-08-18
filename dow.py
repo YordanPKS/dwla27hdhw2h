@@ -54,7 +54,7 @@ def download_video_insta(client, message):
     elif "youtube.com" in url or "youtu.be" in url:
         download_folder = 'downloads'  # Replace with your desired download folder
         ydl_opts = {
-            'format': 'best[height=360]',
+            'format': 'best[height<=480]',
             'outtmpl': f'{download_folder}/%(title)s.%(ext)s', # Guarda los videos en la carpeta "downloads"
             'postprocessors': [{
                 'key': 'FFmpegVideoConvertor',
