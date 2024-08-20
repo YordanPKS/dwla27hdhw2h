@@ -236,12 +236,13 @@ def download_video_insta(client, message):
 
 𝚈𝚘𝚛𝚍𝚊𝚗𝙿𝙺𝚂!Ⓡ""")
         time.sleep(2)
+        archivo_cookie = 'www.pinterest.com_cookies.txt'
         opciones = {
         'format': 'best',
         'outtmpl': f'{download_folder}/%(title)s.%(ext)s',  # Nombre del archivo
         'cookiefile': archivo_cookie,    # Ruta al archivo de cookies
         }
-        archivo_cookie = 'www.pinterest.com_cookies.txt'
+        
         app.edit_message_text(message.chat.id, pmeg.id, """𝕊𝕦 𝕥𝕒𝕣𝕖𝕒 𝕖𝕤𝕥𝕒 𝕤𝕚𝕖𝕟𝕕𝕠 𝕡𝕣𝕠𝕔𝕖𝕤𝕒𝕕𝕒!
    [➔➔➔➔➔80℅]
 ❘𝙴𝚜𝚝𝚊𝚍𝚘: 𝙳𝚎𝚜𝚌𝚊𝚛𝚐𝚊𝚗𝚍𝚘!⇍ ❘
