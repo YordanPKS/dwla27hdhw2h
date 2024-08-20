@@ -217,7 +217,7 @@ def download_video_insta(client, message):
 
 
 
-    elif "pinterest.com" in url:
+    elif "pin.it" in url or "pinterest.com" in url:
         pmeg = app.send_message(message.chat.id, """
                       𝕊𝕦 𝕥𝕒𝕣𝕖𝕒 𝕖𝕤𝕥𝕒 𝕤𝕚𝕖𝕟𝕕𝕠 𝕡𝕣𝕠𝕔𝕖𝕤𝕒𝕕𝕒!
    [➔➔10℅]
