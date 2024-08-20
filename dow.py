@@ -17,7 +17,7 @@ app = Client("boti",
              bot_token="7208754912:AAGUIaYdy1vKHlDiSpxUGJQS1lZkIDwuOMA")
 @app.on_message(filters.command("start"))
 def holap(app, message):
-    app.send_message(message.chat.id,"Bienvenido al bot de descargas:\n*Actualmente solo soporta:\n>YouTube\n>Instagram.\n>Facebook\n\nModo de uso:\nEnvie la URL al bot y listo\n\nDesarrollado por @Yordan_PKS")
+    app.send_message(message.chat.id,"Bienvenido al bot de descargas:\n*Actualmente solo soporta:\n>YouTube\n>Instagram.\n>Facebook\n>Pinterest\n\nModo de uso:\nEnvie la URL al bot y listo\n\nDesarrollado por @Yordan_PKS")
 
 
 @app.on_message(filters.text)
